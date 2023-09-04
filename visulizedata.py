@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.ndimage import *
 
-data = pd.read_csv('Heart Attack.csv')
+data = pd.read_csv('data/Heart Attack.csv')
 needsnorms = ['age', 'gender', 'impluse', 'pressurehight', 'pressurelow', 'glucose', 'kcm', 'troponin']
 data[needsnorms] = data[needsnorms].apply(lambda x: (x - x.min()) / (x.max() - x.min()))
 

@@ -13,7 +13,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.neural_network import MLPClassifier
 
 sns.set_style(style='darkgrid')
-data = pd.read_csv('Heart Attack.csv')
+data = pd.read_csv('data/Heart Attack.csv')
 data.dtypes
 data.describe()
 
