@@ -11,14 +11,14 @@ with open("models/knn_model.pkl", "rb") as file:
     knn_loaded = pickle.load(file)
 
 def get_user_data():
-    age = float(input("Please enter your age: "))
-    gender = input("Please enter your gender (e.g., Male, Female, etc.): ")
-    impluse = float(input("Please enter your impluse value: "))
-    pressurehight = float(input("Please enter your high blood pressure value: "))
-    pressurelow = float(input("Please enter your low blood pressure value: "))
-    glucose = float(input("Please enter your glucose level: "))
-    kcm = float(input("Please enter your KCM value: "))
-    troponin = float(input("Please enter your troponin level: "))
+    age = float(input("enter age: "))
+    gender = input("1 male 0 female: ")
+    impluse = float(input("enter impluse value: "))
+    pressurehight = float(input("high blood pressure value: "))
+    pressurelow = float(input("low blood pressure value: "))
+    glucose = float(input("glucose level: "))
+    kcm = float(input("KCM value: "))
+    troponin = float(input("troponin level: "))
 
     user_data = pd.DataFrame({
         'age': [age],
